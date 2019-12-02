@@ -1,0 +1,81 @@
+/*Hele siden*/
+body{background-color:white;
+  
+    margin:0; padding:5;
+}
+
+/*#overskrift{
+    margin:auto;
+    width:auto;
+    font-family: serif;
+}
+*/
+
+#container{background-color:lightsteelblue;
+    text-align: center; }
+
+#information{background-color:darkslateblue;
+text-align: center;}
+
+footer {font-size: x-small; font-style:italic;}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 35px;
+text-decoration: none;
+    margin: 20px
+}
+h2{
+    font-size: 28px;
+    text-align: left;
+}
+#content a
+{text-decoration: none;}
+
+p {
+  font-family: Times New Roman;
+  font-size: 15px;
+  text-align: left;
+  color: black;
+    float: left;
+
+}
+p1{
+  font-family: Times New Roman;
+  font-size: 13px;
+    font-style:italic;
+  float: left;
+  color: black;
+      
+}
+/*billedet*/
+#logo{
+  margin:20px;
+  text-align: left;
+    float:left
+}
+    /*Definér linket "Besøg Svendborg"*/
+.nav a:link {
+  text-decoration: none;
+    color:black;
+    font-size: 15px;
+    font-family: serif
+
+}
+.nav a:visited {
+  text-decoration: none;
+    color:black;
+    font-family: serif;
+}
+.nav a:hover {
+  text-decoration: underline;
+    color:darkslategrey;
+    font-family: serif
+}
+.container {background-color: lightsteelblue;  
+    position: fixed; /*Placerer bar fast på side*/
+    top: 0;  /*Placer bar på toppen af siden */
+    width: 100%; /*Lad bar fylde 100% af bredden på siden */}
+
+.billede{float: right;}

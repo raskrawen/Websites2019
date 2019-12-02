@@ -1,0 +1,65 @@
+<!--Overnatningsside--> <!--Laves-->
+<title>Festivaler</title>
+<link rel="stylesheet" href="Pynt%20til%20hjemmeside.css"/> 
+
+<html>
+<body>
+
+<!--Overskrift-->
+<div id="container">
+<div id="content">
+    <br>
+<header><a href="HTML-hjemmeside.html"><h1>Svendborg Touristbureau</h1></a></div></header>
+
+<!--Sideskift - Skift fra ét programmeret dokument til det næste-->
+<!--Husk at omformulere så den henviser til noget andet -->
+
+<br><div class="nav">
+<a href="Aktuelle%20aktiviteter.html">Aktuelle aktiviteter</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Oplevelser.html">Oplevelser</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Spis%20og%20drik.html">Spis og drik</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Festivaler.html">Festivaler</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Overnatning.html">Overnatning</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Om%20os.html">Om os</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div><br></div>
+  <!--Søgefunktion-->
+<input type="text" id="searchField" placeholder="Søg her">
+<button type="button" onclick="mySearchFunction()">🔍</button>
+<br>
+ <p id="result">
+     </p>    
+
+<script>
+function mySearchFunction() {
+var searchText = document.getElementById('searchField').value;
+var resultText = "";
+if (searchText == "w3school") {
+	resultText = "Free Web Building Tutorials!";
+  	resultText = resultText.link("https://www.w3schools.com");
+}
+else if ((searchText == "dr") || (searchText == "dr2"))
+/*|| bettyder "eller" eller "or"*/ {
+	resultText = "Danmarks Radio";
+  	resultText = resultText.link("https://www.dr.dk");
+}
+else if (searchText == "din tekst") {
+	resultText = "mere tekst";
+  	resultText = resultText.link("et link");
+}
+else {
+	resultText = "hunde har nøgne ører";
+}
+document.getElementById("result").innerHTML = ""+ resultText;
+}
+   
+</script>   
+<div id="Indhold">
+<p>I Svendborg er der flere store festivaler i løbet af året, hvor de fleste er gratis, eller til priser man kan betale</p>
+<br><br><br><br>
+    <img id="foto" src="Festival.jpg" height="50%" width="50%">
+    </div>
+    
+    
+    
+</body>
+</html>

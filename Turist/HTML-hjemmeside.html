@@ -1,0 +1,91 @@
+<!--DOCTYPE html-->
+
+<title>Svendborg Touristbureau</title>
+
+<!--Henvisning til tilhørende CSS-side-->
+<link rel="stylesheet" href="Pynt%20til%20hjemmeside.css"/> 
+
+<html>
+<body>
+
+<!--Overskrift-->
+<div id="container">
+<div id="content">
+    <br>
+    <header><a href="HTML-hjemmeside.html"><h1>Svendborg Touristbureau</h1></a></header></div>
+
+<!--Navigeringssider som står lige nedenfor overskriften - dette gør det nemmere at navigere på siden-->
+
+<br><div class="nav">
+<a href="Aktuelle%20aktiviteter.html">Aktuelle aktiviteter</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+<a href="Oplevelser.html">Oplevelser</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+<a href="Spis%20og%20drik.html">Spis og drik</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+<a href="Festivaler.html">Festivaler</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+<a href="Overnatning.html">Overnatning</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+<a href="Om%20os.html">Om os</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    </div><br></div>
+ 
+ <!--Søgefunktion som dog ikke fungerer- men er en skitse til teori-brug-->
+<input type="text" id="searchField" placeholder="Søg her">
+<button type="button" onclick="mySearchFunction()">🔍</button>
+<br>
+ <p id="result">
+     </p>    
+<div id="billede" style="text-align: right;margin:25"> <img src="svendborg.png" width="750" height="340">
+
+    <!--Almindelig brødtekst--> 
+    <p>Velkommen til Svendborgs Touristbureau 
+    <br> 
+    Test, test ,test    
+    </p>
+    <br>
+
+    
+<script>
+    /*Søgefunktionens bagvedliggende kode - kodet med JavaScript*/
+function mySearchFunction() {
+var searchText = document.getElementById('searchField').value;
+var resultText = "";
+if (searchText == "w3school") {
+	resultText = "Free Web Building Tutorials!";
+  	resultText = resultText.link("https://www.w3schools.com");
+}
+else if ((searchText == "dr") || (searchText == "dr2"))
+/* || bettyder "eller" eller "or"*/ {
+	resultText = "Danmarks Radio";
+  	resultText = resultText.link("https://www.dr.dk");
+}
+else if (searchText == "din tekst") {
+	resultText = "mere tekst";
+  	resultText = resultText.link("et link");
+}
+else {
+	resultText = "hunde har nøgne ører";
+}
+document.getElementById("result").innerHTML = ""+ resultText;
+}
+</script>
+
+    <p1>Her i Svendborg har vi mange spændende seværdigheder</p1>
+    
+    </div>   
+ <br><br>
+    <hr>
+<footer>Sidefod</footer>
+<img src="Clean.png" alt="Logo" id="logo" width="350" height="125">
+<!--<iframe src="Valutaomregner.html"></iframe>-->
+
+</body>
+</html>

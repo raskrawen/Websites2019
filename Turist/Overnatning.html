@@ -1,0 +1,67 @@
+<!--Overnatningsside--> <!--Laves-->
+<title>Overnatning i Svendborg</title> 
+<link rel="stylesheet" href="Pynt%20til%20hjemmeside.css">
+<html>
+<body>
+   
+<div id="container">
+<div id="overskrift">
+    <br>
+<header><a href="HTML-hjemmeside.html"><h1>Svendborg Touristbureau</h1></a></header></div>
+<div id="content">
+</div>
+
+<!--Sideskift - Skift fra ét programmeret dokument til det næste-->
+<!--Husk at omformulere så den henviser til noget andet -->
+
+<br><div class="nav">
+<a href="Aktuelle%20aktiviteter.html">Aktuelle aktiviteter</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Oplevelser.html">Oplevelser</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Spis%20og%20drik.html">Spis og drik</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Festivaler.html">Festivaler</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Overnatning.html">Overnatning</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="Om%20os.html">Om os</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div><br></div>    
+    
+ <!--Søgefunktion-->
+<input type="text" id="searchField" placeholder="Søg her">
+<button type="button" onclick="mySearchFunction()">🔍</button>
+<br>
+ <p id="result">
+     </p>    
+
+<script>
+function mySearchFunction() {
+var searchText = document.getElementById('searchField').value;
+var resultText = "";
+if (searchText == "w3school") {
+	resultText = "Free Web Building Tutorials!";
+  	resultText = resultText.link("https://www.w3schools.com");
+}
+else if ((searchText == "dr") || (searchText == "dr2"))
+/*|| bettyder "eller" eller "or"*/ {
+	resultText = "Danmarks Radio";
+  	resultText = resultText.link("https://www.dr.dk");
+}
+else if (searchText == "din tekst") {
+	resultText = "mere tekst";
+  	resultText = resultText.link("et link");
+}
+else {
+	resultText = "hunde har nøgne ører";
+}
+document.getElementById("result").innerHTML = ""+ resultText;
+}
+   
+</script>       
+ 
+<h2>Overnatning</h2>
+    <p>Svendborg er en by med mange kvaliteter. Rundt i Svendborg er der mange hoteller, campingspladser og Bed and Breakfeast.</p>
+    <br>
+    <br>
+    <br>
+    <div id="iframe">
+    <iframe width="100%" height="100%" align="middle" frameborder="6px" src="https://www.booking.com/searchresults.da.html?aid=373423&label=svendborg-GxELW_0AHsJ0G4IUIIAcQAS140112712276%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-19324967215%3Alp1005176%3Ali%3Adec%3Adm&sid=fa1ecc7a30f147186ee7dbf54565e454&sb=1&src=theme_landing_city&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Faccommodation%2Fcity%2Fdk%2Fsvendborg.da.html%3Faid%3D373423%3Blabel%3Dsvendborg-GxELW_0AHsJ0G4IUIIAcQAS140112712276%253Apl%253Ata%253Ap1%253Ap2%253Aac%253Aap1t1%253Aneg%253Afi%253Atikwd-19324967215%253Alp1005176%253Ali%253Adec%253Adm%3Bsid%3Dfa1ecc7a30f147186ee7dbf54565e454%3B&theme_id=8&theme_source=theme_landing_city&ss=Svendborg&is_ski_area=0&ssne=Svendborg&ssne_untouched=Svendborg&dest_id=-2752021&dest_type=city&checkin_year=&checkin_month=&checkout_year=&checkout_month=&group_adults=2&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1"  ></iframe>  
+    </div>    
+</body>
+</html>
