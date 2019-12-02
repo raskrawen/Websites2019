@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+.item1 { grid-area: header; text-align: center; color: black}
+.item2 { grid-area: menu2; text-align: center; }
+.item3 { grid-area: main; text-align: left;  } 
+.item4 { grid-area: footer; text-align: center; }
+.item5 { grid-area: menu1; text-align: center; }
+.item6 { grid-area: menu3; text-align: center; }
+.item7 { grid-area: menu4; text-align: center; }
+    
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header header header'
+    'menu1 menu1 menu2 menu2 menu3 menu3 menu4 menu4'  
+    'main main main main main main main main'
+    'footer footer footer footer footer footer footer footer';
+  grid-gap: 2px;
+  background-color: white;
+  padding: 4px;
+}
+
+.grid-container > div {
+  background-color: lightblue; 
+  padding: 20px 0;
+  font-size: 30px;
+}
+      a {
+  display: block;
+  color: black;
+  padding: 2px 2px;
+  text-decoration: none;
+}
+
+  a:hover {
+  background-color: black;
+  color: blue;
+}
+        #myfooter { 
+            font-size: 12px;
+            }
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+
+  <div class="item1"><b>JC Pills Industries</b></div>
+  <div class="item2"><a href="index.html">Go back</a></div>
+    <div class="item3"><img src="http://trainsmarter.dk/wp-content/uploads/2016/06/Koffeinpiller.jpg"/> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>  
+  <div id="myfooter" class="item4">Kælderen Svendborg Gymnasium STX AP Møllervej 35 lokale 021</div>
+    <div class="item5"><a href="Produkt.html">Products</a></div>
+  <div class="item6"><a href="About.html">About us</a></div>
+  <div class="item7"><a href="Otherthings.html">Other things</a></div>
+</div>
+</body>
+</html>
