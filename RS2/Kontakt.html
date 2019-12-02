@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Radio Svend</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 5px;
+  text-align: center;
+  background: #fce95f;
+  color: #20c046;
+}
+    
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+    p {
+        line-height: 1.5;
+    }
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+     <img src="https://scontent-arn2-2.xx.fbcdn.net/v/t31.0-8/1658211_743856745695007_6468701798078477144_o.jpg?_nc_cat=105&_nc_oc=AQnTr8x-ga14FLk0kmAOtHS9FO947f7_XYLH4NIvICPDMHaCE6KifwaH2jt1lCwpJnk&_nc_ht=scontent-arn2-2.xx&oh=0d057e66318c2ddd2d6535e95bba9e72&oe=5E233EE6" style="height:300px;">
+  <p>- Direkte fra under trappen i det boglige.</p>
+</div>
+
+<div class="navbar">
+  <a href="Index.html">Forside</a>
+  <a href="Medlemmer.html">Medlemmer</a>
+  <a href="Brevkasse.html">Brevkasse</a>
+  <a href="Programmer.html">Programmer</a>
+  <a href="Kontakt.html" class="right & active">Kontakt</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Om os</h2>
+      <p>Radio Svend er til for at gøre dine spisepauser lidt sjovere! 	Vi sender flere gange om ugen direkte fra under trappen i det boglige med forskellig musik alt efter hvilket humør, vi er i. I Radio Svend giver vi lytterne mulighed for at ringe ind og smide dilemmaer i postkassen, og herefter svarer vi på dem direkte i radioen. Så hvis du går rundt med et dilemma, som du bare ikke kan finde hoved eller hale i, er du altid velkommen til at smide det ned i brevkassen ved radioen. Du kan høre Radio Svend i kantinen og i det boglige mandag, onsdag og fredag i spisepausen. ♥</p>
+    
+    <img src="https://scontent-arn2-2.xx.fbcdn.net/v/t31.0-8/1658211_743856745695007_6468701798078477144_o.jpg?_nc_cat=105&_nc_oc=AQnTr8x-ga14FLk0kmAOtHS9FO947f7_XYLH4NIvICPDMHaCE6KifwaH2jt1lCwpJnk&_nc_ht=scontent-arn2-2.xx&oh=0d057e66318c2ddd2d6535e95bba9e72&oe=5E233EE6" style="height:200px;">
+    
+   
+  </div>
+  <div class="main">
+    <h2>Kontakt os</h2>
+   
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Fornavn</label>
+    <input type="text" id="fname" name="firstname" placeholder="Dit fornavn..">
+
+    <label for="lname">Efternavn</label>
+    <input type="text" id="lname" name="lastname" placeholder="Dit efternavn..">
+
+    <label for="country">Land</label>
+    <select id="country" name="country">
+      <option value="danmark">Danmark</option>
+    </select>
+
+    <label for="subject">Besked</label>
+    <textarea id="subject" name="subject" placeholder="Skriv din besked :)" style="height:200px"></textarea>
+
+    <input type="submit" value="Send">
+  </form>
+</div>
+
+</body>
+</html>
+
+
+  </div>
+</div>
+
+<div class="footer">
+ <marquee> <h2>Radio Svend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio Svend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio Svend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio Svend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio Svend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio Svend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio Svend</h2>
+    </marquee>
+</div>
+
+</body>
+</html>
+

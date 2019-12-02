@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    html ,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+    </style>
+<title>Radio Svend</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+    background: #fce95f;
+    }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 5px;
+  text-align: center;
+  background: #fce95f;
+  color: #20c046;
+}
+    
+
+.header h1 {
+  font-size: 40px;
+}
+
+/* CSS Navigationsbar som "låser" sig selv fast når man scroller ned på siden */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* CSS navigationsbar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+
+/* CSS Link til højre */
+.navbar a.right {
+  float: right;
+  z-index: 1000;
+}
+
+/* CSS Hover farve*/
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  z-index: 1000;
+}
+
+/* CSS Aktivt link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+  z-index: 1000;
+}
+
+.row {  
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* CSS Kasse til venstre */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* CSS Main kasse */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* CSS Sidefod */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  position: relative;
+  
+}
+
+.video {
+ 
+    position: absolute;
+    left: 794px;
+    top: 530px;
+    }
+    
+p2 {
+    line-height: 1.5;
+    font-size: 18.5px;
+    }
+
+/* Layoutet skifter hvis du fx bruger en smartphone - når skærmen er mindre end 700px bred kommer de to "kasser" oven på hinanden */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Layoutet skifter hvis du fx bruger en smartphone - når skærmen er mindre end 400px bred bliver navigationsbaren lodret i stedet for vandret */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/da_DK/sdk.js#xfbml=1&version=v5.0"></script>
+<div class="header">
+     <img src="https://scontent-arn2-2.xx.fbcdn.net/v/t31.0-8/1658211_743856745695007_6468701798078477144_o.jpg?_nc_cat=105&_nc_oc=AQnTr8x-ga14FLk0kmAOtHS9FO947f7_XYLH4NIvICPDMHaCE6KifwaH2jt1lCwpJnk&_nc_ht=scontent-arn2-2.xx&oh=0d057e66318c2ddd2d6535e95bba9e72&oe=5E233EE6" style="height:300px;">
+  <p>- Direkte fra under trappen i det boglige.</p>
+</div>
+
+<div class="navbar">
+  <a href="Index.html" class="active">Forside</a>
+  <a href="Medlemmer.html">Medlemmer</a>
+  <a href="Brevkasse.html">Brevkasse</a>
+  <a href="Programmer.html">Programmer</a>
+  <a href="Kontakt.html" class="right">Kontakt</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Find os på Facebook!</h2>
+    <div class="fb-page" data-href="https://www.facebook.com/radiosvend/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/radiosvend/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/radiosvend/">Radio Svend</a></blockquote></div>
+    
+  </div>
+    
+  <div class="main">
+    <h2>SPILLET FOR NYLIG</h2>
+   <iframe src="https://open.spotify.com/embed/playlist/7s4PJjuMEpa8hu1vJkgbpm?si=L6tbu7g6R6Sk983y4tjJ9w" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <h2>Om os</h2>
+    <p2>Radio Svend er til for at gøre dine spisepauser lidt sjovere! 	Vi sender flere gange om ugen direkte fra under trappen i det boglige med forskellig musik alt efter hvilket humør, vi er i. I Radio Svend giver vi lytterne mulighed for at ringe ind og smide dilemmaer i postkassen, og herefter svarer vi på dem direkte i radioen. Så hvis du går rundt med et dilemma, som du bare ikke kan finde hoved eller hale i, er du altid velkommen til at smide det ned i brevkassen ved radioen. Du kan høre Radio Svend i kantinen og i det boglige mandag, onsdag og fredag i spisepausen. ♥</p2>
+    </div>    
+    <div class="video"><iframe width="200%" height="337px" src="https://www.youtube.com/embed/JcDv-TsaG1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+ 
+      
+  </div>
+
+
+<div class="footer">
+ <marquee> <h2>Radio Svend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio Svend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio Svend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio Svend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio Svend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio Svend&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radio Svend</h2>
+    </marquee>
+</div>
+
+</body>
+</html>
+
