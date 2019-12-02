@@ -1,0 +1,62 @@
+ 
+body { 
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
+  color: #fff;
+  line-height: 1.6;
+  text-align: center;
+} /* skrifttyper og hvordan skriften skal stå overordenet> */
+
+/* De næste koder der kommer handler om definationer på hvordan containern skal forholde sig og */
+.container {
+  max-width: 980px;
+    position: center; 
+}
+ 
+#showcase {
+  height: 400px;
+}   
+
+#showcase h1 {
+  font-size: 50px;
+  position: relative;
+  animation: heading;       
+  animation-duration: 4s;
+  animation-fill-mode: forwards;               /* fortæller om postionen tilsidt i animationen */
+}
+
+@keyframes heading {        /* fortæller hvad animationen "heading" skal gøre */
+  0%   {top: -50px;}
+  100% {top: 200px;}
+}
+
+#content {                  /* ny animation for knap nederst */  
+  position: center;
+  animation-name: content;
+  animation-duration: 4s;
+}
+
+.btn{
+  display: inline-block;  /* definerer information om den lille boks med knap */ 
+  color: orangered;
+  padding: 16px 32px;
+  border: #fff 1px solid;
+  margin-top:40px;  /* afstand imellem knap og tekst */ 
+  opacity: 0;
+  animation-name: btn;
+  animation-duration: 3s;
+  animation-delay: 4s;         /* hvor lang tid der skal gå før knappen bliver synlig */ 
+  animation-fill-mode: forwards;     /* udsenende efter animation er færdig */ 
+
+  transition-property: transform;   /* animation når man holder musen over */ 
+  transition-duration: 1s; 
+}
+
+.btn:hover {        /* hover betyder at når man holder musen over boksen "btn" rotere 180 grader i y-retningne */
+  transform: rotateY(180deg);
+}
+
+@keyframes btn { /* fortæler om animationen der gør at btn går fra at være gennemsigtig til at man kan se den  */
+  0%   {opacity:0}
+  100% {opacity: 1}
+}
